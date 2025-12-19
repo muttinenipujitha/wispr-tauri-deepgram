@@ -1,0 +1,16 @@
+{
+  "identifier": "default",
+  "description": "Default capabilities for dev",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "core:event:default",
+    "core:event:allow-listen",
+    "core:event:allow-emit",
+    "core:event:allow-unlisten",
+
+    "clipboard-manager:default",
+    "clipboard-manager:allow-write-text"
+  ]
+}
+
