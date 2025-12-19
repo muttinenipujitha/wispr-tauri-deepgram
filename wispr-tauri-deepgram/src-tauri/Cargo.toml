@@ -1,0 +1,26 @@
+[package]
+name = "voice_to_text"
+version = "0.1.0"
+description = "Voice-to-text app using Tauri + Deepgram"
+authors = ["you"]
+license = ""
+repository = ""
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-clipboard-manager = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+tokio-tungstenite = { version = "0.24", features = ["native-tls"] }
+futures-util = "0.3"
+url = "2"
+http = "1"
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]
+
